@@ -1,16 +1,16 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
+//apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.jfrog.bintray'
 version="1.4.0"
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '25.0.0'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.1'
 
     resourcePrefix "bluetoothkit_"
 
     defaultConfig {
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -27,6 +27,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 }
 
+/*
 def siteUrl = 'https://github.com/dingjikerbo/BluetoothKit' // 项目的主页
 def gitUrl = 'https://github.com/dingjikerbo/BluetoothKit.git' // Git仓库的url
 group = "com.inuker.bluetooth" // Maven Group ID for the artifact，一般填你唯一的包名
@@ -93,3 +94,4 @@ bintray {
         publish = true
     }
 }
+*/
